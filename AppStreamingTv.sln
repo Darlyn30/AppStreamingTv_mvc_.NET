@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStreamingTv", "AppStreamingTv\AppStreamingTv.csproj", "{D5909AA7-5B90-480E-B412-64828FE4F18A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{642F075E-5D3F-4600-8DB4-31F541DE7CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{24D21F50-2FFE-4126-BB88-305A5B6070D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5909AA7-5B90-480E-B412-64828FE4F18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5909AA7-5B90-480E-B412-64828FE4F18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5909AA7-5B90-480E-B412-64828FE4F18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5909AA7-5B90-480E-B412-64828FE4F18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642F075E-5D3F-4600-8DB4-31F541DE7CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642F075E-5D3F-4600-8DB4-31F541DE7CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642F075E-5D3F-4600-8DB4-31F541DE7CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642F075E-5D3F-4600-8DB4-31F541DE7CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D21F50-2FFE-4126-BB88-305A5B6070D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D21F50-2FFE-4126-BB88-305A5B6070D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D21F50-2FFE-4126-BB88-305A5B6070D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D21F50-2FFE-4126-BB88-305A5B6070D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
