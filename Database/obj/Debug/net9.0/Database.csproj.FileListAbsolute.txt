@@ -1,0 +1,15 @@
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\bin\Debug\net9.0\Database.deps.json
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\bin\Debug\net9.0\Database.runtimeconfig.json
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\bin\Debug\net9.0\Database.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\bin\Debug\net9.0\Database.pdb
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.csproj.AssemblyReference.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.AssemblyInfoInputs.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.AssemblyInfo.cs
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.csproj.CoreCompileInputs.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.sourcelink.json
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\refint\Database.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.pdb
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\Database.genruntimeconfig.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Database\obj\Debug\net9.0\ref\Database.dll

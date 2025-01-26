@@ -1,8 +1,37 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Application.ViewModels;
+@model List<SerieViewModel>;
+
+@{
+    ViewData["Title"] = "Detalles de la Serie";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@foreach (var serie in Model)
+{
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top img-product-size img-height" src="@serie.ImagePath" alt="serie img" />
+
+                        <div class="card-body">
+                            <h2>@serie.Name</h2> <br />
+                            <p class="card-text">@serie.Description</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <p><b>Gender:</b> @serie.Gender</p>
+                                    <p><b>Producer:</b> @serie.Producer</p>
+                                    
+                                </div>
+                                <small class="text-muted">Upload: @serie.DateLaunch</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+}

@@ -1,32 +1,24 @@
 using System.Diagnostics;
+using Application.Services;
+using Application.ViewModels;
 using AppStreamingTv.Models;
+using Database.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppStreamingTv.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly SerieService _service;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ApplicationContext _context)
         {
-            _logger = logger;
+            _service = new(_context);
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(await _service.GetAllAsync());
         }
     }
 }

@@ -1,0 +1,16 @@
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\bin\Debug\net9.0\Application.deps.json
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\bin\Debug\net9.0\Application.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\bin\Debug\net9.0\Application.pdb
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.AssemblyInfoInputs.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.AssemblyInfo.cs
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.csproj.CoreCompileInputs.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.sourcelink.json
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\refint\Application.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.pdb
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\ref\Application.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\bin\Debug\net9.0\Database.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\bin\Debug\net9.0\Database.pdb
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Application.csproj.AssemblyReference.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\Application\obj\Debug\net9.0\Applicat.44B5EDA2.Up2Date

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\darly\\Videos\\programacion\\AppStreamingTv\\Database\\Database.csproj": {}
+    "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\Database\\Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\darly\\Videos\\programacion\\AppStreamingTv\\Database\\Database.csproj": {
+    "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\darly\\Videos\\programacion\\AppStreamingTv\\Database\\Database.csproj",
+        "projectUniqueName": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\darly\\Videos\\programacion\\AppStreamingTv\\Database\\Database.csproj",
+        "projectPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\darly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\darly\\Videos\\programacion\\AppStreamingTv\\Database\\obj\\",
+        "outputPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,22 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
