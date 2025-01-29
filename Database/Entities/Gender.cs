@@ -10,6 +10,6 @@ namespace Database.Entities
     public class Gender : BaseBasicEntity
     {
         public string? Description { get; set; }
-        public ICollection<Serie> Series { get; set; }
+        public ICollection<Serie> Series { get; set; } = new List<Serie>();
     }
 }

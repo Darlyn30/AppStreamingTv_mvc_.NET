@@ -36,6 +36,23 @@ namespace Database.Migrations
                     b.HasKey("Name");
 
                     b.ToTable("Genders", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Name = "Action",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "Drama",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "Comedy",
+                            Id = 0
+                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Producer", b =>
@@ -49,6 +66,23 @@ namespace Database.Migrations
                     b.HasKey("Name");
 
                     b.ToTable("Producers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Name = "Netflix",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "HBO",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "Amazon Prime",
+                            Id = 0
+                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Serie", b =>
@@ -68,10 +102,6 @@ namespace Database.Migrations
                     b.Property<string>("GenderName")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Genderr")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -82,10 +112,6 @@ namespace Database.Migrations
 
                     b.Property<string>("ProducerName")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Producerr")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -104,7 +130,7 @@ namespace Database.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Database.Entities.Producer", "Producer")
-                        .WithMany()
+                        .WithMany("Series")
                         .HasForeignKey("ProducerName");
 
                     b.Navigation("Gender");
@@ -113,6 +139,11 @@ namespace Database.Migrations
                 });
 
             modelBuilder.Entity("Database.Entities.Gender", b =>
+                {
+                    b.Navigation("Series");
+                });
+
+            modelBuilder.Entity("Database.Entities.Producer", b =>
                 {
                     b.Navigation("Series");
                 });

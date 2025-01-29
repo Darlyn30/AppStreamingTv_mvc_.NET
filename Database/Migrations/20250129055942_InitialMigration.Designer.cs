@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Database.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20250126080156_InitialMigration")]
+    [Migration("20250129055942_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -39,6 +39,23 @@ namespace Database.Migrations
                     b.HasKey("Name");
 
                     b.ToTable("Genders", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Name = "Action",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "Drama",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "Comedy",
+                            Id = 0
+                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Producer", b =>
@@ -52,6 +69,23 @@ namespace Database.Migrations
                     b.HasKey("Name");
 
                     b.ToTable("Producers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Name = "Netflix",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "HBO",
+                            Id = 0
+                        },
+                        new
+                        {
+                            Name = "Amazon Prime",
+                            Id = 0
+                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Serie", b =>
@@ -69,12 +103,7 @@ namespace Database.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("GenderName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
-
-                    b.PrimitiveCollection<string>("Genderr")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
@@ -85,12 +114,7 @@ namespace Database.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProducerName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Producerr")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -106,14 +130,11 @@ namespace Database.Migrations
                     b.HasOne("Database.Entities.Gender", "Gender")
                         .WithMany("Series")
                         .HasForeignKey("GenderName")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Database.Entities.Producer", "Producer")
-                        .WithMany()
-                        .HasForeignKey("ProducerName")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Series")
+                        .HasForeignKey("ProducerName");
 
                     b.Navigation("Gender");
 
@@ -121,6 +142,11 @@ namespace Database.Migrations
                 });
 
             modelBuilder.Entity("Database.Entities.Gender", b =>
+                {
+                    b.Navigation("Series");
+                });
+
+            modelBuilder.Entity("Database.Entities.Producer", b =>
                 {
                     b.Navigation("Series");
                 });

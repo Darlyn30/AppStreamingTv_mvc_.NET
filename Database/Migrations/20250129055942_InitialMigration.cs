@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Database.Migrations
 {
     /// <inheritdoc />
@@ -43,12 +45,10 @@ namespace Database.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Genderr = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Producerr = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DateLaunch = table.Column<DateOnly>(type: "date", nullable: false),
-                    GenderName = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ProducerName = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    GenderName = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    ProducerName = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -64,8 +64,27 @@ namespace Database.Migrations
                         name: "FK_Series_Producers_ProducerName",
                         column: x => x.ProducerName,
                         principalTable: "Producers",
-                        principalColumn: "Name",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Name");
+                });
+
+            migrationBuilder.InsertData(
+                table: "Genders",
+                columns: new[] { "Name", "Description", "Id" },
+                values: new object[,]
+                {
+                    { "Action", null, 0 },
+                    { "Comedy", null, 0 },
+                    { "Drama", null, 0 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Producers",
+                columns: new[] { "Name", "Id" },
+                values: new object[,]
+                {
+                    { "Amazon Prime", 0 },
+                    { "HBO", 0 },
+                    { "Netflix", 0 }
                 });
 
             migrationBuilder.CreateIndex(

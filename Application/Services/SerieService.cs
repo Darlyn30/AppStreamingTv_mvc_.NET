@@ -12,9 +12,11 @@ namespace Application.Services
     public class SerieService
     {
         private readonly SerieRepository _repository;
+        private readonly ApplicationContext _context;
         public SerieService(ApplicationContext _context)
         {
             _repository = new(_context);
+            this._context = _context;
         }
 
         public async Task<List<SerieViewModel>> GetAllAsync()
@@ -26,13 +28,26 @@ namespace Application.Services
                 Name = x.Name,
                 Description = x.Description,
                 ImagePath = x.ImagePath,
-                Gender = x.Genderr,
-                Producer = x.Producerr,
                 DateLaunch = x.DateLaunch,
 
             }).ToList();
         }
 
-        
+
+        public async Task<List<SerieViewModel>> GetSeriesByGenderAsync(string genderName)
+        {
+            var series = await _repository.GetSeriesByGenderAsync(genderName);
+            return series.Select(s => new SerieViewModel
+            {
+                Name = s.Name,
+                Description = s.Description,
+                ImagePath = s.ImagePath,
+                Gender = s.Gender!.Name,  // Evita valores nulos
+                Producer = s.Producer!.Name,
+                DateLaunch = s.DateLaunch
+            }).ToList();
+        }
+
+
     }
 }

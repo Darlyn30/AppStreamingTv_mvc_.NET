@@ -47,6 +47,21 @@ namespace Database.Context
                 .OnDelete(DeleteBehavior.Cascade); // if any category is deleted with data product, the products will be deleted
 
             #endregion
+
+            #region Seed Data
+            //Inject Data genders & producers
+            modelBuilder.Entity<Gender>().HasData(
+                new Gender { Name = "Action" },
+                new Gender { Name = "Drama" },
+                new Gender { Name = "Comedy" }
+            );
+
+            modelBuilder.Entity<Producer>().HasData(
+                new Producer { Name = "Netflix" },
+                new Producer { Name = "HBO" },
+                new Producer { Name = "Amazon Prime" }
+            );
+            #endregion
         }
     }
 }

@@ -234,4 +234,4 @@ D:\programacion\C#\AppStreamingTv_mvc_.NET\AppStreamingTv\bin\Debug\net9.0\ru\Mi
 D:\programacion\C#\AppStreamingTv_mvc_.NET\AppStreamingTv\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\programacion\C#\AppStreamingTv_mvc_.NET\AppStreamingTv\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\programacion\C#\AppStreamingTv_mvc_.NET\AppStreamingTv\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\programacion\C#\AppStreamingTv_mvc_.NET\AppStreamingTv\obj\Debug\net9.0\compressed\xi38mgmdg7-7vnwj3mqgc.gz
+D:\programacion\C#\AppStreamingTv_mvc_.NET\AppStreamingTv\obj\Debug\net9.0\compressed\xi38mgmdg7-ubtzrb2b97.gz

@@ -2,36 +2,28 @@
 @model List<SerieViewModel>;
 
 @{
-    ViewData["Title"] = "Detalles de la Serie";
+    ViewData["Title"] = "Catálogo de Series";
 }
 
-@foreach (var serie in Model)
-{
-    <div class="album py-5 bg-light">
-        <div class="container">
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top img-product-size img-height" src="@serie.ImagePath" alt="serie img" />
-
+<div class="container mt-5">
+    @foreach (SerieViewModel gender in Model)
+    {
+        <div class="mb-4">
+            <h2 class="text-white">@gender.Name</h2>
+            <div class="scroll-container">
+                @foreach (SerieViewModel serie in Model)
+                {
+                    <div class="card">
+                        <img class="card-img-top img-height" src="@serie.ImagePath" alt="serie img" />
                         <div class="card-body">
-                            <h2>@serie.Name</h2> <br />
+                            <h5 class="card-title">@serie.Name</h5>
                             <p class="card-text">@serie.Description</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <p><b>Gender:</b> @serie.Gender</p>
-                                    <p><b>Producer:</b> @serie.Producer</p>
-                                    
-                                </div>
-                                <small class="text-muted">Upload: @serie.DateLaunch</small>
-                            </div>
+                            <p><b>Producer:</b> @serie.Producer</p>
+                            <small class="text-muted">Launch: @serie.DateLaunch</small>
                         </div>
                     </div>
-                </div>
-
-
+                }
             </div>
         </div>
-    </div>
-}
+    }
+</div>

@@ -10,8 +10,6 @@ namespace Database.Entities
     public class Serie : BaseBasicEntity
     {
         public string? Description { get; set; }
-        public string Genderr { get; set; }
-        public string Producerr { get; set; }
         public string ImagePath { get; set; }
         public DateOnly DateLaunch { get; set; }
 

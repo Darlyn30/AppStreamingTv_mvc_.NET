@@ -1,0 +1,55 @@
+﻿@using Application.ViewModels;
+@model List<GenderViewModel>
+
+@{
+    ViewData["Title"] = "Buscar por Género";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Buscar por Género</h2>
+
+    <!-- Dropdown para seleccionar género -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <form method="get" asp-action="Index">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        @if (Model.SelectedGenreId.HasValue)
+                        {
+                            var selectedGenre = Model.Genres.FirstOrDefault(g => g.Id == Model.SelectedGenreId);
+                            @selectedGenre?.Name
+                        }
+                        else
+                        {
+                            <span>Selecciona un género</span>
+                        }
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="@Url.Action("Index", new { genreId = (int?)null })">Todos los géneros</a></li>
+                        @foreach (var genre in Model.Genres)
+                        {
+                            <li><a class="dropdown-item" href="@Url.Action("Index", new { genreId = genre.Id })">@genre.Name</a></li>
+                        }
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Películas filtradas por género -->
+    <div class="row">
+        @foreach (var movie in Model.Movies)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@movie.ImageUrl" class="card-img-top" alt="@movie.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@movie.Title</h5>
+                        <p class="card-text">@movie.Description</p>
+                        <a href="@Url.Action("Details", "Movies", new { id = movie.Id })" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

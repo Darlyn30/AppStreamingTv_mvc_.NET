@@ -20,5 +20,15 @@ namespace AppStreamingTv.Controllers
         {
             return View(await _service.GetAllAsync());
         }
+
+        [HttpGet("by-gender/{genderName}")]
+        public async Task<IActionResult> GetSeriesByGender(string genderName)
+        {
+            var series = await _service.GetSeriesByGenderAsync(genderName);
+            if (series == null || !series.Any()) return NotFound("No series found for this genre.");
+
+            return Ok(series);
+        }
+
     }
 }

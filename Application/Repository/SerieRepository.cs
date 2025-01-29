@@ -21,5 +21,13 @@ namespace Application.Repository
         {
             return await _context.Series.ToListAsync();
         }
+
+        public async Task<List<Serie>> GetSeriesByGenderAsync(string genderName)
+        {
+            return await _context.Series
+                .Include(s => s.Gender)  // Incluye la relación con Genders
+                .Where(s => s.Gender!.Name == genderName)  // Filtra por el nombre del género
+                .ToListAsync();
+        }
     }
 }

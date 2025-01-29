@@ -24,6 +24,13 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseCors(policy =>
+{
+    policy.AllowAnyHeader();
+    policy.AllowAnyMethod();
+    policy.AllowAnyOrigin();
+});
+
 app.MapStaticAssets();
 
 app.MapControllerRoute(
