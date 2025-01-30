@@ -3,15 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Database.Entities;
 
 namespace Application.ViewModels
 {
     public class ProducerViewModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        public List<SerieViewModel> Series { get; set; }
     }
 }

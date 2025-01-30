@@ -10,6 +10,7 @@ namespace AppStreamingTv.Controllers
     public class HomeController : Controller
     {
         private readonly SerieService _service;
+        private readonly ContentService _contService;
 
         public HomeController(ApplicationContext _context)
         {
@@ -21,14 +22,13 @@ namespace AppStreamingTv.Controllers
             return View(await _service.GetAllAsync());
         }
 
-        [HttpGet("by-gender/{genderName}")]
-        public async Task<IActionResult> GetSeriesByGender(string genderName)
+        public async Task<IActionResult> Play(int id)
         {
-            var series = await _service.GetSeriesByGenderAsync(genderName);
-            if (series == null || !series.Any()) return NotFound("No series found for this genre.");
 
-            return Ok(series);
+
+            return View(await _contService.PlayContent(id));
         }
+
 
     }
 }

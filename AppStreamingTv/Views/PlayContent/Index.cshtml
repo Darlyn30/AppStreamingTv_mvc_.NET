@@ -1,0 +1,18 @@
+﻿@using Application.ViewModels;
+@model SerieViewModel;
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.Name" class="img-fluid" alt="@Model.Name">
+        </div>
+        <div class="col-md-6">
+            <h1>@Model.Name</h1>
+            <p><strong>Gender:</strong> @Model.GenderName</p>
+            <p><strong>Producer:</strong> @Model.ProducerName</p>
+            <p><strong>Release Date:</strong> @Model.DateLaunch.ToString("yyyy-MM-dd")</p>
+            <p><strong>Description:</strong> @Model.Description</p>
+        </div>
+    </div>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Catalog</a>
+</div>

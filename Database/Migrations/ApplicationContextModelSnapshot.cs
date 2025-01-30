@@ -120,6 +120,128 @@ namespace Database.Migrations
                     b.HasIndex("ProducerName");
 
                     b.ToTable("Series", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DateLaunch = new DateOnly(2022, 6, 15),
+                            Description = "Una persecución sin límites",
+                            GenderName = "Action",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPnd7rHMzB99xyxJM_I0qMx4CfBbU3X5lWZw&s",
+                            Name = "Mad Max: Fury Road",
+                            ProducerName = "HBO"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DateLaunch = new DateOnly(2021, 7, 20),
+                            Description = "El destino de un asesino",
+                            GenderName = "Action",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnw3TERg5WgeeQfPkEOKfvUa9ozkQnK9Kwpg&s",
+                            Name = "John Wick: Chapter 3",
+                            ProducerName = "HBO"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DateLaunch = new DateOnly(2020, 12, 5),
+                            Description = "Venganza y justicia",
+                            GenderName = "Action",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDDqyVkCGitgwrNGC0-4ncraXHB8AkICCAA&s",
+                            Name = "The Equalizer",
+                            ProducerName = "HBO"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DateLaunch = new DateOnly(2023, 9, 10),
+                            Description = "El renacimiento de un héroe",
+                            GenderName = "Action",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcS_VtG0teuMR4fRh3lHKASF5DgRYFJJ12xg&s",
+                            Name = "The Batman",
+                            ProducerName = "HBO"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            DateLaunch = new DateOnly(2019, 5, 22),
+                            Description = "Espías en acción",
+                            GenderName = "Action",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw33BwddJK9hCCB4fLXYzeMQAIOVbLeKZoww&s",
+                            Name = "James Bond: No Time to Die",
+                            ProducerName = "HBO"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            DateLaunch = new DateOnly(2018, 3, 12),
+                            Description = "Una comedia que desafía todo",
+                            GenderName = "Comedy",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzsuhJw9R3Em4QlevtLHubwh8rbWE-LRsIw&s",
+                            Name = "The Hangover",
+                            ProducerName = "Netflix"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            DateLaunch = new DateOnly(2016, 11, 18),
+                            Description = "Dos amigos en un problema absurdo",
+                            GenderName = "Comedy",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHmvOC6hQ-HH26kYbCyVlx4rMQNWEehBHZ4g&s",
+                            Name = "Dumb and Dumber",
+                            ProducerName = "Netflix"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            DateLaunch = new DateOnly(2020, 8, 30),
+                            Description = "Risas sin parar",
+                            GenderName = "Comedy",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UxEsOWvisBlyt9VQDUBRWnspIgJVqEEVsg&s",
+                            Name = "Superbad",
+                            ProducerName = "Netflix"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            DateLaunch = new DateOnly(2015, 9, 25),
+                            Description = "Una historia de superación",
+                            GenderName = "Drama",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsvSnqLSc7EahZH8SovIf69Xh5xcM8sn3dfQ&s",
+                            Name = "The Pursuit of Happyness",
+                            ProducerName = "Amazon Prime"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            DateLaunch = new DateOnly(2017, 2, 14),
+                            Description = "El peso de la justicia",
+                            GenderName = "Drama",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-_xVIEU6EaLaetNEvlR8B-aTjuRFnNDhZw&s",
+                            Name = "The Green Mile",
+                            ProducerName = "Amazon Prime"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            DateLaunch = new DateOnly(2016, 7, 15),
+                            Description = "Un grupo de amigos descubre misterios sobrenaturales en su pequeña ciudad.",
+                            GenderName = "Drama",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUPZYoxnwtDUaaVd0DW90jUFpsLUjf5TJ5IA&s",
+                            Name = "Stranger Things",
+                            ProducerName = "Netflix"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            DateLaunch = new DateOnly(2008, 1, 20),
+                            Description = "Un profesor de química se convierte en narcotraficante tras ser diagnosticado con cáncer.",
+                            GenderName = "Drama",
+                            ImagePath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZfZpCMlu5Rb-B1bslBSeU3CP1Cx6lSTP-7g&s",
+                            Name = "Breaking Bad",
+                            ProducerName = "Netflix"
+                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Serie", b =>

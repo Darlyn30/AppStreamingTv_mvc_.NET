@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Application.Repository;
 using Application.ViewModels;
 using Database.Context;
+using Database.Entities;
 
 namespace Application.Services
 {
@@ -25,6 +26,7 @@ namespace Application.Services
             var list = await _repository.GetAll();
             return list.Select(x => new SerieViewModel
             {
+                Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
                 ImagePath = x.ImagePath,
@@ -33,21 +35,15 @@ namespace Application.Services
             }).ToList();
         }
 
-
-        public async Task<List<SerieViewModel>> GetSeriesByGenderAsync(string genderName)
+        public async Task<List<GenderViewModel>> GetGenders()
         {
-            var series = await _repository.GetSeriesByGenderAsync(genderName);
-            return series.Select(s => new SerieViewModel
+            var list = await _repository.GetAll();
+            return list.Select(x => new GenderViewModel
             {
-                Name = s.Name,
-                Description = s.Description,
-                ImagePath = s.ImagePath,
-                Gender = s.Gender!.Name,  // Evita valores nulos
-                Producer = s.Producer!.Name,
-                DateLaunch = s.DateLaunch
+                Id = x.Id,
+                Name = x.Name,
+                Description = x.Description,
             }).ToList();
         }
-
-
     }
 }

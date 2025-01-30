@@ -1,28 +1,19 @@
 ﻿@using Application.ViewModels;
 @model List<SerieViewModel>;
-
 @{
     ViewData["Title"] = "Catálogo de Series";
 }
 
-<div class="container mt-5">
-    @foreach (SerieViewModel gender in Model)
+<h1>Catálogo de Series</h1>
+
+<div class="row">
+    @foreach (SerieViewModel serie in Model)
     {
-        <div class="mb-4">
-            <h2 class="text-white">@gender.Name</h2>
-            <div class="scroll-container">
-                @foreach (SerieViewModel serie in Model)
-                {
-                    <div class="card">
-                        <img class="card-img-top img-height" src="@serie.ImagePath" alt="serie img" />
-                        <div class="card-body">
-                            <h5 class="card-title">@serie.Name</h5>
-                            <p class="card-text">@serie.Description</p>
-                            <p><b>Producer:</b> @serie.Producer</p>
-                            <small class="text-muted">Launch: @serie.DateLaunch</small>
-                        </div>
-                    </div>
-                }
+        <div class="card" style="width: 18rem;">
+            <img src="@serie.ImagePath" class="card-img-top img-height" alt="@serie.Name">
+            <div class="card-body">
+                <h5 class="card-title">@serie.Name</h5>
+                <p class="card-text">@serie.Description</p>
             </div>
         </div>
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Application.ViewModels;
 using Database.Context;
 using Database.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -29,5 +30,12 @@ namespace Application.Repository
                 .Where(s => s.Gender!.Name == genderName)  // Filtra por el nombre del género
                 .ToListAsync();
         }
+
+        public async Task<List<Gender>> GetGenders()
+        {
+            return await _context.Genders.ToListAsync();
+        }
+
+
     }
 }

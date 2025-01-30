@@ -1,0 +1,20 @@
+﻿@using Application.ViewModels;
+@model List<SerieViewModel>;
+
+<!-- Series -->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Acción -->
+    @foreach(SerieViewModel series in Model)
+    {
+        <div class="col serie accion">
+            <div class="card">
+                <img src="@series.ImagePath" class="card-img-top img-height" alt="Serie Acción 1">
+                <div class="card-body">
+                    <h5 class="card-title">@series.Name</h5>
+                    <p class="card-text">@series.Description</p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

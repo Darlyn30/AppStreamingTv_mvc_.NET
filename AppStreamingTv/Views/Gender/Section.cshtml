@@ -1,0 +1,18 @@
+﻿@using Application.ViewModels;
+@model List<GenderViewModel>;
+
+    @* i did not know i could use that like compontent *@
+    @* can divide sets of the page *@
+
+<div class="row mb-3">
+    <div class="col-md-6 mx-auto d-flex">
+        <select class="form-select me-2" id="filtro-genero">
+            <option value="todos">Todos</option>
+            @foreach (GenderViewModel gender in Model)
+            {
+                <option value="@gender.Name">@gender.Name</option>
+            }
+        </select>
+        <button class="btn btn-primary">Buscar</button>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7XIDkGkdnbUWFAlxMFiupAQvDoInHPJg1DfwIBWDsyo=",
+  "Hash": "TJygOnVtJLCgOc8oLtKZ53QnBHEGDYAERWveXrJJ5/I=",
   "Source": "AppStreamingTv",
   "BasePath": "_content/AppStreamingTv",
   "Mode": "Default",
@@ -1277,12 +1277,12 @@
       "OriginalItemSpec": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-ubtzrb2b97.gz",
+      "Identity": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-6zgxdm52i4.gz",
       "SourceId": "AppStreamingTv",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/AppStreamingTv",
-      "RelativePath": "css/site#[.{fingerprint=ubtzrb2b97}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=6zgxdm52i4}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m3p0rge94v",
-      "Integrity": "EtqRkqDCibRCXkcnvL9fjvFE0YLjdc0SYZS7q89p7iI=",
+      "Fingerprint": "v5kzuc06kv",
+      "Integrity": "LaFA1+O/FKOcqhrwd/+E3993VvuRmHo60Ja1Is/QZ2g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ubtzrb2b97",
-      "Integrity": "xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I=",
+      "Fingerprint": "6zgxdm52i4",
+      "Integrity": "Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2752,7 +2752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2805,7 +2805,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2842,7 +2842,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2889,7 +2889,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2950,7 +2950,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2995,7 +2995,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3050,7 +3050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3111,7 +3111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3156,7 +3156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3211,7 +3211,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3264,7 +3264,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3301,7 +3301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 05:58:07 GMT"
+          "Value": "Thu, 30 Jan 2025 06:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3324,13 +3324,13 @@
       ]
     },
     {
-      "Route": "css/site.css",
-      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-ubtzrb2b97.gz",
+      "Route": "css/site.6zgxdm52i4.css",
+      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-6zgxdm52i4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001689189189"
+          "Quality": "0.002369668246"
         }
       ],
       "ResponseHeaders": [
@@ -3340,19 +3340,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "591"
+          "Value": "421"
         },
         {
           "Name": "ETag",
-          "Value": "\"EtqRkqDCibRCXkcnvL9fjvFE0YLjdc0SYZS7q89p7iI=\""
+          "Value": "\"LaFA1+O/FKOcqhrwd/+E3993VvuRmHo60Ja1Is/QZ2g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 07:28:46 GMT"
+          "Value": "Wed, 29 Jan 2025 07:40:45 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3368,18 +3368,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I=\""
+          "Value": "W/\"Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "6zgxdm52i4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I="
+          "Value": "sha256-Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.6zgxdm52i4.css",
       "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3389,7 +3397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1362"
+          "Value": "885"
         },
         {
           "Name": "Content-Type",
@@ -3397,121 +3405,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I=\""
+          "Value": "\"Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 07:28:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-ubtzrb2b97.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EtqRkqDCibRCXkcnvL9fjvFE0YLjdc0SYZS7q89p7iI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 07:28:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EtqRkqDCibRCXkcnvL9fjvFE0YLjdc0SYZS7q89p7iI="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.ubtzrb2b97.css",
-      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-ubtzrb2b97.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001689189189"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "591"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EtqRkqDCibRCXkcnvL9fjvFE0YLjdc0SYZS7q89p7iI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 07:28:46 GMT"
+          "Value": "Wed, 29 Jan 2025 07:40:45 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ubtzrb2b97"
+          "Value": "6zgxdm52i4"
         },
         {
           "Name": "label",
@@ -3519,13 +3427,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I="
+          "Value": "sha256-Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g="
         }
       ]
     },
     {
-      "Route": "css/site.ubtzrb2b97.css",
-      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\wwwroot\\css\\site.css",
+      "Route": "css/site.6zgxdm52i4.css.gz",
+      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-6zgxdm52i4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3534,7 +3442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1362"
+          "Value": "421"
         },
         {
           "Name": "Content-Type",
@@ -3542,56 +3450,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I=\""
+          "Value": "\"LaFA1+O/FKOcqhrwd/+E3993VvuRmHo60Ja1Is/QZ2g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 07:28:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ubtzrb2b97"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xpkteAKjJqqikNd6rWZOAhzWHKcE8tyyBqDub62sW9I="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.ubtzrb2b97.css.gz",
-      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-ubtzrb2b97.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EtqRkqDCibRCXkcnvL9fjvFE0YLjdc0SYZS7q89p7iI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 07:28:46 GMT"
+          "Value": "Wed, 29 Jan 2025 07:40:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,7 +3472,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ubtzrb2b97"
+          "Value": "6zgxdm52i4"
         },
         {
           "Name": "label",
@@ -3617,7 +3480,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EtqRkqDCibRCXkcnvL9fjvFE0YLjdc0SYZS7q89p7iI="
+          "Value": "sha256-LaFA1+O/FKOcqhrwd/+E3993VvuRmHo60Ja1Is/QZ2g="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-6zgxdm52i4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002369668246"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "421"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LaFA1+O/FKOcqhrwd/+E3993VvuRmHo60Ja1Is/QZ2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 07:40:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 07:40:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mun4HsMC2ApgNigpY82alizoXqH5i/jAYfRCBVXWT7g="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\AppStreamingTv\\obj\\Debug\\net9.0\\compressed\\xi38mgmdg7-6zgxdm52i4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LaFA1+O/FKOcqhrwd/+E3993VvuRmHo60Ja1Is/QZ2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 07:40:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LaFA1+O/FKOcqhrwd/+E3993VvuRmHo60Ja1Is/QZ2g="
         }
       ]
     },
