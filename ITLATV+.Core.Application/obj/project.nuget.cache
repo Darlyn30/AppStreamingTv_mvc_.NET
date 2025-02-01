@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IwI23TPHGi8=",
+  "success": true,
+  "projectFilePath": "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Core.Application\\ITLATV+.Core.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\darly\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.1\\microsoft.extensions.configuration.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\darly\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.1\\microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\darly\\.nuget\\packages\\microsoft.extensions.options\\9.0.1\\microsoft.extensions.options.9.0.1.nupkg.sha512",
+    "C:\\Users\\darly\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.1\\microsoft.extensions.primitives.9.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

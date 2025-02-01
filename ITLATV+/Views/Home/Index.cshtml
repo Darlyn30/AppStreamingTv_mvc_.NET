@@ -1,0 +1,25 @@
+﻿@using ITLATV_.Core.Application.ViewModels.Series;
+@using ITLATV_.Core.Application.ViewModels.Producers;
+@using ITLATV_.Core.Application.ViewModels.Genders;
+@model List<SerieViewModel>
+@{
+    ViewData["Title"] = "Home";
+}
+
+<main class="container my-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="series-container">
+        @foreach (SerieViewModel series in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@series.ImgPath" class="card-img-top img-height" alt="@series.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@series.Name</h5>
+                        <p class="card-text">@series.Description</p>
+                        <a href="#" class="btn btn-primary">Play Movie</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</main>
