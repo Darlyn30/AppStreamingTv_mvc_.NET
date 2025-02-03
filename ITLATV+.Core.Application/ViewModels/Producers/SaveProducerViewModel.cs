@@ -12,5 +12,6 @@ namespace ITLATV_.Core.Application.ViewModels.Producers
         public int Id { get; set; }
         [Required(ErrorMessage = "You must enter the name of the producer.")]
         public string Name { get; set; }
+        public string ImgPath { get; set; }
     }
 }

@@ -9,3 +9,15 @@ D:\programacion\C#\ITLATV+\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Dom
 D:\programacion\C#\ITLATV+\ITLATV+.Core.Domain\obj\Debug\net9.0\refint\ITLATV+.Core.Domain.dll
 D:\programacion\C#\ITLATV+\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.pdb
 D:\programacion\C#\ITLATV+\ITLATV+.Core.Domain\obj\Debug\net9.0\ref\ITLATV+.Core.Domain.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\bin\Debug\net9.0\ITLATV+.Core.Domain.deps.json
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\bin\Debug\net9.0\ITLATV+.Core.Domain.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\bin\Debug\net9.0\ITLATV+.Core.Domain.pdb
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.AssemblyInfoInputs.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.AssemblyInfo.cs
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.csproj.CoreCompileInputs.cache
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.sourcelink.json
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\refint\ITLATV+.Core.Domain.dll
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ITLATV+.Core.Domain.pdb
+D:\programacion\C#\AppStreamingTv_mvc_.NET\ITLATV+.Core.Domain\obj\Debug\net9.0\ref\ITLATV+.Core.Domain.dll

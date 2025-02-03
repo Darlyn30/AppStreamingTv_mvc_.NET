@@ -1,0 +1,29 @@
+@using ITLATV_.Core.Application.ViewModels.Producers;
+@model SaveProducerViewModel
+@{
+    ViewData["Title"] = "Delete Producer";
+}
+
+<div class="row">
+
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-header bg-danger text-light">
+                <h4>¿Are you sure you want to delete the producer? @Model.Name?</h4>
+            </div>
+            <div class="card-body">
+
+                <form method="post" asp-controller="Producer" asp-action="DeletePost">
+
+                    <input type="hidden" asp-for="Id" />
+
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <a asp-controller="Producer" asp-action="Index" class="btn btn-warning">Cancel</a>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>

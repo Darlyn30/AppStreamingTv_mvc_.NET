@@ -65,6 +65,10 @@ namespace ITLATV_.Infrastructure.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ImgPath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(150)
@@ -78,16 +82,19 @@ namespace ITLATV_.Infrastructure.Persistence.Migrations
                         new
                         {
                             Id = 1,
+                            ImgPath = "https://i.blogs.es/4285e7/netflix-portada/500_333.jpeg",
                             Name = "Netflix"
                         },
                         new
                         {
                             Id = 2,
+                            ImgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CJ1Hes6NEmEew2gvgVtFZ02yCEPpDtKLKw&s",
                             Name = "HBO"
                         },
                         new
                         {
                             Id = 3,
+                            ImgPath = "https://m.media-amazon.com/images/I/31W9hs7w0JL.png",
                             Name = "Amazon Prime"
                         });
                 });
@@ -133,6 +140,118 @@ namespace ITLATV_.Infrastructure.Persistence.Migrations
                     b.HasIndex("ProducerId");
 
                     b.ToTable("Series", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Una persecución sin límites",
+                            GenderId = 1,
+                            LinkVideo = "https://www.youtube.com/watch?v=kvU4uf8bI0o",
+                            Name = "Mad Max: Fury Road",
+                            ProducerId = 2,
+                            ReleaseDate = new DateOnly(2022, 6, 15),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPnd7rHMzB99xyxJM_I0qMx4CfBbU3X5lWZw&s"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "El destino de un asesino",
+                            GenderId = 1,
+                            LinkVideo = "https://www.youtube.com/watch?v=NbUt7Apl_Z0",
+                            Name = "John Wick: Chapter 3",
+                            ProducerId = 2,
+                            ReleaseDate = new DateOnly(2021, 7, 20),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnw3TERg5WgeeQfPkEOKfvUa9ozkQnK9Kwpg&s"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Venganza y justicia",
+                            GenderId = 1,
+                            LinkVideo = "https://www.youtube.com/watch?v=VjctHUEmutw",
+                            Name = "The Equalizer",
+                            ProducerId = 2,
+                            ReleaseDate = new DateOnly(2020, 12, 5),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDDqyVkCGitgwrNGC0-4ncraXHB8AkICCAA&s"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "El renacimiento de un héroe",
+                            GenderId = 1,
+                            LinkVideo = "https://www.youtube.com/watch?v=NLOp_6uPccQ",
+                            Name = "The Batman",
+                            ProducerId = 2,
+                            ReleaseDate = new DateOnly(2023, 9, 10),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcS_VtG0teuMR4fRh3lHKASF5DgRYFJJ12xg&s"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Espías en acción",
+                            GenderId = 1,
+                            LinkVideo = "https://www.youtube.com/watch?v=BIhNsAtPbPI",
+                            Name = "James Bond: No Time to Die",
+                            ProducerId = 2,
+                            ReleaseDate = new DateOnly(2019, 5, 22),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw33BwddJK9hCCB4fLXYzeMQAIOVbLeKZoww&s"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Una comedia que desafía todo",
+                            GenderId = 3,
+                            LinkVideo = "https://www.youtube.com/watch?v=tcdUhdOlz9M",
+                            Name = "The Hangover",
+                            ProducerId = 1,
+                            ReleaseDate = new DateOnly(2018, 3, 12),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzsuhJw9R3Em4QlevtLHubwh8rbWE-LRsIw&s"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Dos amigos en un problema absurdo",
+                            GenderId = 3,
+                            LinkVideo = "https://www.youtube.com/watch?v=l13yPhimE3o",
+                            Name = "Dumb and Dumber",
+                            ProducerId = 1,
+                            ReleaseDate = new DateOnly(2016, 11, 18),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHmvOC6hQ-HH26kYbCyVlx4rMQNWEehBHZ4g&s"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Description = "Risas sin parar",
+                            GenderId = 3,
+                            LinkVideo = "https://www.youtube.com/watch?v=4eaZ_48ZYog",
+                            Name = "Superbad",
+                            ProducerId = 1,
+                            ReleaseDate = new DateOnly(2020, 8, 30),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UxEsOWvisBlyt9VQDUBRWnspIgJVqEEVsg&s"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Una historia de superación",
+                            GenderId = 2,
+                            LinkVideo = "https://www.youtube.com/watch?v=DMOBlEcRuw8",
+                            Name = "The Pursuit of Happyness",
+                            ProducerId = 3,
+                            ReleaseDate = new DateOnly(2015, 9, 25),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsvSnqLSc7EahZH8SovIf69Xh5xcM8sn3dfQ&s"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Description = "El peso de la justicia",
+                            GenderId = 2,
+                            LinkVideo = "https://www.youtube.com/watch?v=Ki4haFrqSrw",
+                            Name = "The Green Mile",
+                            ProducerId = 3,
+                            ReleaseDate = new DateOnly(2017, 2, 14),
+                            imgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-_xVIEU6EaLaetNEvlR8B-aTjuRFnNDhZw&s"
+                        });
                 });
 
             modelBuilder.Entity("ITLATV_.Core.Domain.Entities.Serie", b =>

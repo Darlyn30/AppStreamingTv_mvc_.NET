@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IwI23TPHGi8=",
+  "dgSpecHash": "kAc6W/9xTPw=",
   "success": true,
-  "projectFilePath": "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Core.Application\\ITLATV+.Core.Application.csproj",
+  "projectFilePath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Application\\ITLATV+.Core.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\darly\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.1\\microsoft.extensions.configuration.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\darly\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.1\\microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",

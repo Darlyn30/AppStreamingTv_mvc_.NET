@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj": {}
+    "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj": {}
   },
   "projects": {
-    "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj": {
+    "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
+        "projectUniqueName": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
         "projectName": "ITLATV+.Core.Domain",
-        "projectPath": "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
+        "projectPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
         "packagesPath": "C:\\Users\\darly\\.nuget\\packages\\",
-        "outputPath": "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Core.Domain\\obj\\",
+        "outputPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

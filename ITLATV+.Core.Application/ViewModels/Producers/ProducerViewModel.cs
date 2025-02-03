@@ -11,6 +11,7 @@ namespace ITLATV_.Core.Application.ViewModels.Producers
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string ImgPath { get; set; }
         public int SeriesCount { get; set; }
     }
 }

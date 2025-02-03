@@ -9,6 +9,7 @@ namespace ITLATV_.Core.Domain.Entities
 {
     public class Producer : BaseBasicEntity
     {
+        public string ImgPath { get; set; }
         public ICollection<Serie> Series { get; set; } = new List<Serie>();
     }
 }

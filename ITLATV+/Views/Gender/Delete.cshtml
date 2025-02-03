@@ -1,0 +1,29 @@
+@using ITLATV_.Core.Application.ViewModels.Genders;
+@model SaveGenderViewModel
+@{
+    ViewData["Title"] = "Delete Gender";
+}
+
+<div class="row">
+
+    <div class="col-6 offset-3" >
+        <div class="card">
+            <div class="card-header bg-danger text-light">
+                <h4>¿Are you sure total delete gender: @Model.Name?</h4>
+            </div>
+            <div class="card-body">
+
+                <form method="post" asp-controller="Gender" asp-action="DeletePost">
+                
+                    <input type="hidden" asp-for="Id" />
+
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <a asp-controller="Genero" asp-action="Index" class="btn btn-warning">Cancel</a>
+                
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>

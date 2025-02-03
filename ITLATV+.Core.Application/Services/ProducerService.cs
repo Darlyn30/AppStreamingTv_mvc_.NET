@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ITLATV.Core.Application.Interfaces.Services;
 using ITLATV_.Core.Application.Interfaces.Repositories;
+using ITLATV_.Core.Application.Interfaces.Services;
 using ITLATV_.Core.Application.ViewModels.Producers;
 using ITLATV_.Core.Domain.Entities;
 
@@ -21,6 +21,7 @@ namespace ITLATV_.Core.Application.Services
         {
             Producer producer = new();
             producer.Name = vm.Name;
+            producer.ImgPath = vm.ImgPath;
 
             await _producerRepo.AddAsync(producer);
         }
@@ -39,6 +40,7 @@ namespace ITLATV_.Core.Application.Services
             {
                 Name = producer.Name,
                 Id = producer.Id,
+                ImgPath = producer.ImgPath,
                 SeriesCount = producer.Series.Count()
 
             }).ToList();
@@ -51,6 +53,7 @@ namespace ITLATV_.Core.Application.Services
             SaveProducerViewModel vm = new();
             vm.Id = producer.Id;
             vm.Name = producer.Name;
+            vm.ImgPath = producer.ImgPath;
 
             return vm;
         }
@@ -60,6 +63,7 @@ namespace ITLATV_.Core.Application.Services
             Producer producer = new();
             producer.Id = vm.Id;
             producer.Name = vm.Name;
+            producer.ImgPath = vm.ImgPath;
 
             await _producerRepo.UpdateAsync(producer);
         }

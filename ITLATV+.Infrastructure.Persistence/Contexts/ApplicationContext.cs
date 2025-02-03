@@ -81,9 +81,9 @@ namespace ITLATV_.Infrastructure.Persistence.Contexts
             );
 
             modelBuilder.Entity<Producer>().HasData(
-                new Producer { Id = 1, Name = "Netflix" },
-                new Producer { Id = 2, Name = "HBO" },
-                new Producer { Id = 3, Name = "Amazon Prime" }
+                new Producer { Id = 1, Name = "Netflix", ImgPath = "https://i.blogs.es/4285e7/netflix-portada/500_333.jpeg" },
+                new Producer { Id = 2, Name = "HBO", ImgPath = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CJ1Hes6NEmEew2gvgVtFZ02yCEPpDtKLKw&s" },
+                new Producer { Id = 3, Name = "Amazon Prime", ImgPath = "https://m.media-amazon.com/images/I/31W9hs7w0JL.png" }
             );
 
             //serie data default

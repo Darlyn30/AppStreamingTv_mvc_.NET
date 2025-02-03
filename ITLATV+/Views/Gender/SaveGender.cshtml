@@ -1,0 +1,39 @@
+@using ITLATV_.Core.Application.ViewModels.Genders;
+@model SaveGenderViewModel
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Save gender";
+}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header bg-dark text-light">
+                    <h4>@(editMode ? $"Editing genre: {Model.Name}" : "Creating new genre")</h4>
+                </div>
+                <div class="card-body">
+
+                    <form method="post" asp-controller="Gender" asp-action="@(editMode ? "Edit":"Create")">
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Name: </label>
+                            <input type="text" asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>                  
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <a asp-controller="Gender" asp-action="Index" class="btn btn-warning">GO BACK</a>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pt1nxwKCr1U=",
+  "dgSpecHash": "ZRtDONWzrBs=",
   "success": true,
-  "projectFilePath": "D:\\programacion\\C#\\ITLATV+\\ITLATV+.Infrastructure.Persistence\\ITLATV+.Infrastructure.Persistence.csproj",
+  "projectFilePath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Infrastructure.Persistence\\ITLATV+.Infrastructure.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\darly\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\darly\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

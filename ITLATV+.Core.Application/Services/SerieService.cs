@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ITLATV.Core.Application.Interfaces.Services;
 using ITLATV_.Core.Application.Interfaces.Repositories;
+using ITLATV_.Core.Application.Interfaces.Services;
 using ITLATV_.Core.Application.ViewModels.Series;
 using ITLATV_.Core.Domain.Entities;
 
@@ -30,7 +30,7 @@ namespace ITLATV_.Core.Application.Services
             serie.ProducerId = vm.ProducerId;
 
             await _serieRepository.UpdateAsync(serie);
-            
+
         }
 
         public async Task Add(SaveSerieViewModel vm)
@@ -51,6 +51,19 @@ namespace ITLATV_.Core.Application.Services
             await _serieRepository.DeleteAsync(serie);
         }
 
+        public async Task<SerieViewModel> GetById(int id)
+        {
+            var serie = await _serieRepository.GetByIdAsync(id);
+            return new SerieViewModel
+            {
+                Id = serie.Id,
+                Name = serie.Name,
+                ImgPath = serie.imgPath,
+                LinkVideo = serie.LinkVideo,
+                GenderId = serie.GenderId,
+                ProducerId = serie.ProducerId
+            };
+        }
         public async Task<SaveSerieViewModel> GetByIdSaveViewModel(int id)
         {
             var serie = await _serieRepository.GetByIdAsync(id);
@@ -132,7 +145,7 @@ namespace ITLATV_.Core.Application.Services
             return listViewModels;
         }
 
-        public async Task<List<SerieViewModel>> GetByNameAsync(string nombreSerie)
+        public async Task<List<SerieViewModel>> GetByNameAsync(string serieName)
         {
             var serieList = await _serieRepository.GetAllWithIncludeAsync(new List<string> { "Producer", "Gender" });
 
@@ -148,9 +161,9 @@ namespace ITLATV_.Core.Application.Services
 
             }).ToList();
 
-            if (nombreSerie != null)
+            if (serieName != null)
             {
-                listViewModels = listViewModels.Where(serie => serie.Name.ToLower().Contains(nombreSerie.ToLower())).ToList();
+                listViewModels = listViewModels.Where(serie => serie.Name.ToLower().Contains(serieName.ToLower())).ToList();
             }
 
             return listViewModels;

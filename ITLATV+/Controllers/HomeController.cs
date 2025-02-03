@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using ITLATV.Core.Application.Interfaces.Services;
+using ITLATV_.Core.Application.Interfaces.Services;
 using ITLATV_.Core.Application.ViewModels.Series;
 using ITLATV_.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -11,42 +11,42 @@ namespace ITLATV_.Controllers
         private readonly ISerieService _serieService;
         private readonly IProducerService _producerService;
         private readonly IGenderService _genderService;
-        public HomeController(ISerieService serieService, IProducerService productoraService, IGenderService generoService)
+        public HomeController(ISerieService serieService, IProducerService producerService, IGenderService genderService)
         {
             _serieService = serieService;
-            _producerService = productoraService;
-            _genderService = generoService;
+            _producerService = producerService;
+            _genderService = genderService;
         }
 
         public async Task<IActionResult> Index(FilterSerieViewModel vm)
         {
-            ViewBag.Productoras = await _producerService.GetAllViewModel();
-            ViewBag.Generos = await _genderService.GetAllViewModel();
+            ViewBag.Producer = await _producerService.GetAllViewModel();
+            ViewBag.Gender = await _genderService.GetAllViewModel();
             return View(await _serieService.GetAllViewModel());
 
         }
 
-        public async Task<IActionResult> Productora(FilterSerieViewModel vm)
+        public async Task<IActionResult> Producer(FilterSerieViewModel vm)
         {
-            ViewBag.Productoras = await _producerService.GetAllViewModel();
-            ViewBag.Generos = await _genderService.GetAllViewModel();
+            ViewBag.Producer = await _producerService.GetAllViewModel();
+            ViewBag.Gender = await _genderService.GetAllViewModel();
             return View("Index", await _serieService.GetAllViewModelWithFilters(vm));
 
         }
-        public async Task<IActionResult> Genero(FilterSerieViewModel vm)
+        public async Task<IActionResult> Gender(FilterSerieViewModel vm)
         {
-            ViewBag.Productoras = await _producerService.GetAllViewModel();
-            ViewBag.Generos = await _genderService.GetAllViewModel();
+            ViewBag.Producer = await _producerService.GetAllViewModel();
+            ViewBag.Gender = await _genderService.GetAllViewModel();
             return View("Index", await _serieService.GetAllViewModelWithFiltersG(vm));
 
         }
 
-        public async Task<IActionResult> Search(string nombreSerie)
+        public async Task<IActionResult> Search(string serieName)
         {
-            ViewBag.Productoras = await _producerService.GetAllViewModel();
-            ViewBag.Generos = await _genderService.GetAllViewModel();
+            ViewBag.Producer = await _producerService.GetAllViewModel();
+            ViewBag.Gender = await _genderService.GetAllViewModel();
 
-            return View("Index", await _serieService.GetByNameAsync(nombreSerie));
+            return View("Index", await _serieService.GetByNameAsync(serieName));
         }
     }
 }

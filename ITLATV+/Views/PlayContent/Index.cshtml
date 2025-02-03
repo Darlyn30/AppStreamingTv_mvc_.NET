@@ -1,0 +1,32 @@
+@using ITLATV_.Core.Application.ViewModels.Series;
+@using ITLATV_.Core.Application.ViewModels.Genders;
+@using ITLATV_.Core.Application.ViewModels.Producers;
+@model SerieViewModel
+@{
+    ViewData["Title"] = "Play Content";
+}  
+
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video id="videoPlayer" class="w-100" controls autoplay>
+                    <source src="@Model.LinkVideo" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="mt-4 p-3 border rounded">
+                <h2 class="text-center">@Model.Name</h2>
+                <p class="text-muted">@Model.Description</p>
+                <p><strong>Producer:</strong> @ViewBag</p>
+                <p><strong>Genre:</strong> @Model.GenderName</p>
+            </div>
+
+            <div class="text-center mt-3">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Back to Series</a>
+            </div>
+        </div>
+    </div>
+</div>

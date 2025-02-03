@@ -1,25 +1,139 @@
 ﻿@using ITLATV_.Core.Application.ViewModels.Series;
 @using ITLATV_.Core.Application.ViewModels.Producers;
 @using ITLATV_.Core.Application.ViewModels.Genders;
+@using ITLATV_.Infrastructure.Persistence.Contexts
 @model List<SerieViewModel>
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Series Catalog";
 }
 
-<main class="container my-4">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="series-container">
-        @foreach (SerieViewModel series in Model)
-        {
-            <div class="col">
-                <div class="card h-100">
-                    <img src="@series.ImgPath" class="card-img-top img-height" alt="@series.Name">
-                    <div class="card-body">
-                        <h5 class="card-title">@series.Name</h5>
-                        <p class="card-text">@series.Description</p>
-                        <a href="#" class="btn btn-primary">Play Movie</a>
-                    </div>
+<div>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <form method="post" asp-controller="Home" asp-action="Search" class="d-flex" role="search">
+                <input name="serieName" class="form-control me-2" placeholder="The Walking Dead..." aria-label="Search">
+                <button type ="submit" class="btn btn-outline-success">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-3">
+            <div class="card shadow-sm mb-3">
+                <div class="card-header bg-dark text-light text-center">
+                    <h4>Filters</h4>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Producers</h4>
+
+                    <form method="post" asp-controller="Home" asp-action="Producer">
+
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" value="null" type="radio" name="ProducerId" id="producer-all" />
+                                <label class="form-check-label" for="producer-all">All</label>
+                            </div>
+                        </div>
+                        @if (ViewBag.Producers != null)
+                        {
+                            @foreach (ProducerViewModel producer in ViewBag.Producers)
+                            {
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" value="@producer.Id" type="radio" name="ProducerId" id="productora-@producer.Id" />
+                                            <label class="form-check-label" for="producer-@producer.Id">@producer.Name</label>
+                                        </div>
+                                    </div>
+                            }
+                        }
+                        else
+                        {
+                            <p>There is not producers.</p>
+                        }
+
+                        <button type="submit" class="btn btn-primary">Filter</button>
+
+                    </form>
                 </div>
             </div>
-        }
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-light text-center">
+                    <h4>Filter</h4>
+                </div>
+
+                <div class="card-body">
+                    <h4 class="card-title">Genders</h4>
+
+                    <form method="post" asp-controller="Home" asp-action="Gender">
+
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" value="null" type="radio" name="GeneroId" id="genero-all" />
+                                <label class="form-check-label" for="gender-all">All</label>
+                            </div>
+                        </div>
+                        @if(ViewBag.Genders != null)
+                        {
+                            @foreach (GenderViewModel gender in ViewBag.Genders)
+                            {
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" value="@gender.Id" type="radio" name="GenderId" id="gender-@gender.Id" />
+                                            <label class="form-check-label" for="gender-@gender.Id">@gender.Name</label>
+                                        </div>
+                                    </div>
+                            }
+                        }
+                        else 
+                        {
+                            <p>There is not genders.</p>
+                        }
+
+
+                        <button type="submit" class="btn btn-primary">Filters</button>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row">
+
+                @if (Model == null || Model.Count == 0)
+                {
+                    <h2>There is not Series.</h2>
+                }
+                else
+                {
+                    @foreach (SerieViewModel item in Model)
+                    {
+                        <div class="col-4">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top img-height" src="@item.ImgPath" />
+
+                                <div class="card-body">
+                                    <h5 class="card-title text-center fs-3 mb-2" style="margin-top:-10px">@item.Name </h5>
+                                    <p class="card-text fs-6"><strong>Producer: </strong>@item.ProducerName</p>
+                                    @{
+                                        var genre = item.GenderName 
+                                    }
+                                    <p class="card-text fs-6" style="margin-top:-20px;"><strong>Gender: </strong>@genderName</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3" style="margin-left:20px;">
+                                    <a asp-controller="PlayContent" asp-action="Index" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary fw-bold">Play</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
     </div>
-</main>
+
+</div>

@@ -1,4 +1,10 @@
-﻿namespace ITLATV.Core.Application.Interfaces.Services
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ITLATV_.Core.Application.Interfaces.Services
 {
     public interface IGenericService<SaveViewModel, ViewModel>
         where SaveViewModel : class
@@ -13,6 +19,6 @@
         Task<SaveViewModel> GetByIdSaveViewModel(int id);
 
         Task<List<ViewModel>> GetAllViewModel();
+        
     }
-
 }
