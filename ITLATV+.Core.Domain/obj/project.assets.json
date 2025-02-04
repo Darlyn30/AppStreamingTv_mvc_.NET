@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
       "projectName": "ITLATV+.Core.Domain",
-      "projectPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
+      "projectPath": "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\ITLATV+.Core.Domain.csproj",
       "packagesPath": "C:\\Users\\darly\\.nuget\\packages\\",
-      "outputPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\obj\\",
+      "outputPath": "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+.Core.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

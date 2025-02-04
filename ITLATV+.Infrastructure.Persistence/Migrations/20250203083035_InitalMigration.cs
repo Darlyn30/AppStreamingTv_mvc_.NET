@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ITLATV_.Infrastructure.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class AddPathImgProducer : Migration
+    public partial class InitalMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

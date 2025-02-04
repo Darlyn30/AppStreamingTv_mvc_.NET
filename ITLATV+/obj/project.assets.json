@@ -4741,11 +4741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+\\ITLATV+.csproj",
+      "projectUniqueName": "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+\\ITLATV+.csproj",
       "projectName": "ITLATV+",
-      "projectPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+\\ITLATV+.csproj",
+      "projectPath": "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+\\ITLATV+.csproj",
       "packagesPath": "C:\\Users\\darly\\.nuget\\packages\\",
-      "outputPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+\\obj\\",
+      "outputPath": "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4766,8 +4766,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Infrastructure.Persistence\\ITLATV+.Infrastructure.Persistence.csproj": {
-              "projectPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV+.Infrastructure.Persistence\\ITLATV+.Infrastructure.Persistence.csproj"
+            "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+.Infrastructure.Persistence\\ITLATV+.Infrastructure.Persistence.csproj": {
+              "projectPath": "C:\\Users\\darly\\Videos\\programacion\\ITLA+\\AppStreamingTv_mvc_.NET\\ITLATV+.Infrastructure.Persistence\\ITLATV+.Infrastructure.Persistence.csproj"
             }
           }
         }

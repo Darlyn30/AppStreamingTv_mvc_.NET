@@ -13,7 +13,6 @@ namespace ITLATV_.Core.Application.Services
     public class SerieService : ISerieService
     {
         private readonly ISerieRepository _serieRepository;
-
         public SerieService(ISerieRepository serieRepository)
         {
             _serieRepository = serieRepository;
@@ -59,9 +58,12 @@ namespace ITLATV_.Core.Application.Services
                 Id = serie.Id,
                 Name = serie.Name,
                 ImgPath = serie.imgPath,
+                Description = serie.Description,
                 LinkVideo = serie.LinkVideo,
                 GenderId = serie.GenderId,
-                ProducerId = serie.ProducerId
+                ProducerId = serie.ProducerId,
+                GenderName = serie.Gender?.Name,
+                ProducerName = serie.Producer?.Name,
             };
         }
         public async Task<SaveSerieViewModel> GetByIdSaveViewModel(int id)

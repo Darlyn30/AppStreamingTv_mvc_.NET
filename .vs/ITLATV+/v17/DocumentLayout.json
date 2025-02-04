@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\",
+  "WorkspaceRootPath": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|d:\\programacion\\c#\\appstreamingtv_mvc_.net\\itlatv\u002B\\views\\playcontent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A15E84A4-AAC0-4639-BA5D-DADA6A4BE828}|ITLATV\u002B.Infrastructure.Persistence\\ITLATV\u002B.Infrastructure.Persistence.csproj|c:\\users\\darly\\videos\\programacion\\itla\u002B\\appstreamingtv_mvc_.net\\itlatv\u002B.infrastructure.persistence\\migrations\\20250203083035_initalmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A15E84A4-AAC0-4639-BA5D-DADA6A4BE828}|ITLATV\u002B.Infrastructure.Persistence\\ITLATV\u002B.Infrastructure.Persistence.csproj|solutionrelative:itlatv\u002B.infrastructure.persistence\\migrations\\20250203083035_initalmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|c:\\users\\darly\\videos\\programacion\\itla\u002B\\appstreamingtv_mvc_.net\\itlatv\u002B\\views\\playcontent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|solutionrelative:itlatv\u002B\\views\\playcontent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|d:\\programacion\\c#\\appstreamingtv_mvc_.net\\itlatv\u002B\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|c:\\users\\darly\\videos\\programacion\\itla\u002B\\appstreamingtv_mvc_.net\\itlatv\u002B\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|solutionrelative:itlatv\u002B\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|d:\\programacion\\c#\\appstreamingtv_mvc_.net\\itlatv\u002B\\controllers\\playcontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|c:\\users\\darly\\videos\\programacion\\itla\u002B\\appstreamingtv_mvc_.net\\itlatv\u002B\\controllers\\playcontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22CA57F8-6A47-45E7-AA5D-32CBFBB77DF6}|ITLATV\u002B\\ITLATV\u002B.csproj|solutionrelative:itlatv\u002B\\controllers\\playcontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -25,12 +29,29 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "20250203083035_InitalMigration.cs",
+              "DocumentMoniker": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B.Infrastructure.Persistence\\Migrations\\20250203083035_InitalMigration.cs",
+              "RelativeDocumentMoniker": "ITLATV\u002B.Infrastructure.Persistence\\Migrations\\20250203083035_InitalMigration.cs",
+              "ToolTip": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B.Infrastructure.Persistence\\Migrations\\20250203083035_InitalMigration.cs",
+              "RelativeToolTip": "ITLATV\u002B.Infrastructure.Persistence\\Migrations\\20250203083035_InitalMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T08:30:36.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ITLATV\u002B\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ITLATV\u002B\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -38,24 +59,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\PlayContent\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\PlayContent\\Index.cshtml",
               "RelativeDocumentMoniker": "ITLATV\u002B\\Views\\PlayContent\\Index.cshtml",
-              "ToolTip": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\PlayContent\\Index.cshtml",
+              "ToolTip": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Views\\PlayContent\\Index.cshtml",
               "RelativeToolTip": "ITLATV\u002B\\Views\\PlayContent\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-02T11:25:03.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayContentController.cs",
-              "DocumentMoniker": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Controllers\\PlayContentController.cs",
+              "DocumentMoniker": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Controllers\\PlayContentController.cs",
               "RelativeDocumentMoniker": "ITLATV\u002B\\Controllers\\PlayContentController.cs",
-              "ToolTip": "D:\\programacion\\C#\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Controllers\\PlayContentController.cs",
+              "ToolTip": "C:\\Users\\darly\\Videos\\programacion\\ITLA\u002B\\AppStreamingTv_mvc_.NET\\ITLATV\u002B\\Controllers\\PlayContentController.cs",
               "RelativeToolTip": "ITLATV\u002B\\Controllers\\PlayContentController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
