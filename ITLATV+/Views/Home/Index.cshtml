@@ -7,16 +7,6 @@
     ViewData["Title"] = "Series Catalog";
 }
 
-<div>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <form method="post" asp-controller="Home" asp-action="Search" class="d-flex" role="search">
-                <input name="serieName" class="form-control me-2" placeholder="The Walking Dead..." aria-label="Search">
-                <button type ="submit" class="btn btn-outline-success">Search</button>
-            </form>
-        </div>
-    </nav>
-</div>
 
 <div class="container-fluid">
 
@@ -41,12 +31,17 @@
                         {
                             @foreach (ProducerViewModel producer in ViewBag.Producers)
                             {
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" value="@producer.Id" type="radio" name="ProducerId" id="productora-@producer.Id" />
-                                            <label class="form-check-label" for="producer-@producer.Id">@producer.Name</label>
-                                        </div>
+                                <div class="mb-3">
+                                    @{
+                                        //Viewbag is a like a folder it contain viewmodels
+                                        // if it has been imported
+                                        //it counts for gender also
+                                    }
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="@producer.Id" type="radio" name="ProducerId" id="productora-@producer.Id"/>
+                                        <label class="form-check-label" for="producer-@producer.Id">@producer.Name</label>
                                     </div>
+                                </div>
                             }
                         }
                         else
@@ -79,12 +74,13 @@
                         {
                             @foreach (GenderViewModel gender in ViewBag.Genders)
                             {
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" value="@gender.Id" type="radio" name="GenderId" id="gender-@gender.Id" />
-                                            <label class="form-check-label" for="gender-@gender.Id">@gender.Name</label>
-                                        </div>
+                                
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" value="@gender.Id" type="radio" name="GenderId" id="gender-@gender.Id"/>
+                                        <label class="form-check-label" for="gender-@gender.Id">@gender.Name</label>
                                     </div>
+                                </div>
                             }
                         }
                         else 

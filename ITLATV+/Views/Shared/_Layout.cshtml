@@ -35,6 +35,14 @@
                             <a class="nav-link text-dark @(controller == "Producer" ? "active fw-bold" : "")" asp-area="" asp-controller="Producer" asp-action="Index">Producers</a>
                         </li>
                     </ul>
+
+                    <div class="container-fluid">
+                        <form method="post" asp-controller="Home" asp-action="Search" class="d-flex" role="search">
+                            <input name="serieName" class="form-control me-2" placeholder="The Walking Dead..." aria-label="Search">
+                            <button type ="submit" class="btn btn-outline-success">Search</button>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </nav>

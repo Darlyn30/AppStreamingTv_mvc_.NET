@@ -20,31 +20,31 @@ namespace ITLATV_.Controllers
 
         public async Task<IActionResult> Index(FilterSerieViewModel vm)
         {
-            ViewBag.Producer = await _producerService.GetAllViewModel();
-            ViewBag.Gender = await _genderService.GetAllViewModel();
+            ViewBag.Producers = await _producerService.GetAllViewModel();
+            ViewBag.Genders = await _genderService.GetAllViewModel();
             return View(await _serieService.GetAllViewModel());
 
         }
 
         public async Task<IActionResult> Producer(FilterSerieViewModel vm)
         {
-            ViewBag.Producer = await _producerService.GetAllViewModel();
-            ViewBag.Gender = await _genderService.GetAllViewModel();
+            ViewBag.Producers = await _producerService.GetAllViewModel();
+            ViewBag.Genders = await _genderService.GetAllViewModel();
             return View("Index", await _serieService.GetAllViewModelWithFilters(vm));
 
         }
         public async Task<IActionResult> Gender(FilterSerieViewModel vm)
         {
-            ViewBag.Producer = await _producerService.GetAllViewModel();
-            ViewBag.Gender = await _genderService.GetAllViewModel();
+            ViewBag.Producers = await _producerService.GetAllViewModel();
+            ViewBag.Genders = await _genderService.GetAllViewModel();
             return View("Index", await _serieService.GetAllViewModelWithFiltersG(vm));
 
         }
 
         public async Task<IActionResult> Search(string serieName)
         {
-            ViewBag.Producer = await _producerService.GetAllViewModel();
-            ViewBag.Gender = await _genderService.GetAllViewModel();
+            ViewBag.Producers = await _producerService.GetAllViewModel();
+            ViewBag.Genders = await _genderService.GetAllViewModel();
 
             return View("Index", await _serieService.GetByNameAsync(serieName));
         }

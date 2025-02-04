@@ -4,28 +4,41 @@
 @model SerieViewModel
 @{
     ViewData["Title"] = "Play Content";
-}  
+}
 
 
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <div class="embed-responsive embed-responsive-16by9">
-                <video id="videoPlayer" class="w-100" controls autoplay>
-                    <source src="@Model.LinkVideo" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <div class="col-lg-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+                    <!-- Video -->
+                    <div class="embed-responsive embed-responsive-16by9 rounded shadow-sm overflow-hidden">
+                        <video id="videoPlayer" class="w-100 rounded" controls autoplay>
+                            <source src="@Model.LinkVideo" type="video/mp4">
+                            
+                        </video>
+                    </div>
 
-            <div class="mt-4 p-3 border rounded">
-                <h2 class="text-center">@Model.Name</h2>
-                <p class="text-muted">@Model.Description</p>
-                <p><strong>Producer:</strong> @Model.ProducerName</p>
-                <p><strong>Genre:</strong> @Model.GenderName</p>
-            </div>
+                    <!-- Información -->
+                    <div class="mt-4 text-center">
+                        <h2 class="fw-bold">@Model.Name</h2>
+                        <p class="text-muted">@Model.Description</p>
+                        @{
+                            //Console.WriteLine(Model.ProducerId);
+                            
+                        }
+                        <p><strong>Producer:</strong> @Model.ProducerId</p>
+                        <p><strong>Genre:</strong> @Model.GenderId</p>
+                    </div>
 
-            <div class="text-center mt-3">
-                <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Back to Series</a>
+                    <!-- Botón de regreso -->
+                    <div class="text-center mt-4">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm">
+                            ⬅ Back to Series
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
