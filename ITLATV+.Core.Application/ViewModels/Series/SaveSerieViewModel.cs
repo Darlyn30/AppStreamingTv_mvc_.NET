@@ -8,6 +8,8 @@ public class SaveSerieViewModel
     [Required(ErrorMessage = "You must place the Serie Name")]
     public string Name { get; set; }
     [Required(ErrorMessage = "You must place the link to the series cover.")]
+    public string Description { get; set; }
+    [Required(ErrorMessage = "You must place the series Description.")]
     public string ImgPath { get; set; }
     [Required(ErrorMessage = "You must place the video link of the series.")]
     public string LinkVideo { get; set; }

@@ -60,7 +60,7 @@ namespace ITLATV_.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeletePost(int id)
+        public async Task<IActionResult> DeleteGender(int id)
         {
 
             await _genderService.Delete(id);

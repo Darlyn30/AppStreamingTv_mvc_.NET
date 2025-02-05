@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITLATV+.Infrastructure.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0062586aef6e65fa627f81bb77baa9b9683ebda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c4f2a3c16725bf757a1a4ed44003dd82f2a5a83")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITLATV+.Infrastructure.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITLATV+.Infrastructure.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

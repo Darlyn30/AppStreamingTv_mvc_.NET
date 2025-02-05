@@ -13,12 +13,12 @@
             </div>
             <div class="card-body">
 
-                <form method="post" asp-controller="Gender" asp-action="DeletePost">
+                <form method="post" asp-controller="Gender" asp-action="DeleteGender">
                 
                     <input type="hidden" asp-for="Id" />
 
                     <button type="submit" class="btn btn-danger">Delete</button>
-                    <a asp-controller="Genero" asp-action="Index" class="btn btn-warning">Cancel</a>
+                    <a asp-controller="Gender" asp-action="Index" class="btn btn-warning">Cancel</a>
                 
                 </form>
 

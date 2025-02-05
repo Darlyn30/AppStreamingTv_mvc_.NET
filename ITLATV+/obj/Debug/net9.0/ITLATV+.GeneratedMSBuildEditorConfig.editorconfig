@@ -60,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJcU2F2ZVByb2R1Y2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/darly/Videos/programacion/ITLA+/AppStreamingTv_mvc_.NET/ITLATV+/Views/Serie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darly/Videos/programacion/ITLA+/AppStreamingTv_mvc_.NET/ITLATV+/Views/Serie/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/darly/Videos/programacion/ITLA+/AppStreamingTv_mvc_.NET/ITLATV+/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

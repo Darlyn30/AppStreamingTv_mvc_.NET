@@ -1,0 +1,81 @@
+﻿@using ITLATV_.Core.Application.ViewModels.Series
+@model SaveSerieViewModel
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Save Serie";
+}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header bg-dark text-light">
+                    <h4>@(editMode ? $"Editing serie: {Model.Name}" : "Creating new serie")</h4>
+                </div>
+                <div class="card-body">
+
+                    @if (Model.Producers == null || Model.Producers.Count == 0)
+                    {
+                        <h4>no producers</h4>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-warning">⬅ Back to Series</a>
+                    }
+                    else
+                    {
+                        <form method="post" asp-controller="Serie" asp-action="@(editMode ? "Edit":"Create")">
+
+                            <div class="mb-3">
+                                <label asp-for="Name" class="form-label">Name: </label>
+                                <input type="text" asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="ImgPath" class="form-label">Img URL: </label>
+                                <textarea asp-for="ImgPath" class="form-control"></textarea>
+                                <span asp-validation-for="ImgPath" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Description" class="form-label">Description </label>
+                                <input type="text" asp-for="Description" class="form-control" />
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="LinkVideo" class="form-label">URL VIDEO: </label>
+                                <input type="text" asp-for="LinkVideo" class="form-control" />
+                                <span asp-validation-for="LinkVideo" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="GenderId" class="form-label">Genre: </label>
+                                <select asp-for="GenderId" asp-items="@(new SelectList(Model.Genders,"Id","Name"))" class="form-select">
+                                    <option value="0">Choose an option</option>
+
+                                </select>
+                                <span asp-validation-for="GenderId" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="ProducerId" class="form-label">Producer: </label>
+                                <select asp-for="ProducerId" asp-items="@(new SelectList(Model.Producers,"Id","Name"))" class="form-select">
+                                    <option value="0">Choose Option:</option>
+
+                                </select>
+                                <span asp-validation-for="ProducerId" class="text-danger"></span>
+                            </div>
+
+                            <input type="hidden" asp-for="Id" />
+
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a asp-controller="Home" asp-action="Index" class="btn btn-warning">Go back</a>
+                        </form>
+                    }
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

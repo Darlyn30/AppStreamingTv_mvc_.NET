@@ -18,11 +18,13 @@ namespace ITLATV_.Core.Application.Services
             _serieRepository = serieRepository;
         }
 
+
         public async Task Update(SaveSerieViewModel vm)
         {
             Serie serie = new();
             serie.Id = vm.Id;
             serie.Name = vm.Name;
+            serie.Description = vm.Description;
             serie.imgPath = vm.ImgPath;
             serie.LinkVideo = vm.LinkVideo;
             serie.GenderId = vm.GenderId;
@@ -37,6 +39,7 @@ namespace ITLATV_.Core.Application.Services
             Serie serie = new();
             serie.Name = vm.Name;
             serie.imgPath = vm.ImgPath;
+            serie.Description = vm.Description;
             serie.LinkVideo = vm.LinkVideo;
             serie.GenderId = vm.GenderId;
             serie.ProducerId = vm.ProducerId;
@@ -74,6 +77,7 @@ namespace ITLATV_.Core.Application.Services
             vm.Id = serie.Id;
             vm.Name = serie.Name;
             vm.ImgPath = serie.imgPath;
+            vm.Description = serie.Description;
             vm.LinkVideo = serie.LinkVideo;
             vm.GenderId = serie.GenderId;
             vm.ProducerId = serie.ProducerId;
@@ -89,6 +93,7 @@ namespace ITLATV_.Core.Application.Services
             {
                 Id = serie.Id,
                 Name = serie.Name,
+                Description = serie.Description,
                 ImgPath = serie.imgPath,
                 GenderId = serie.Gender != null ? serie.Gender.Id : 0,
                 GenderName = serie.Gender != null ? serie.Gender.Name : null,
@@ -107,6 +112,7 @@ namespace ITLATV_.Core.Application.Services
             {
                 Id = serie.Id,
                 Name = serie.Name,
+                Description = serie.Description,
                 ImgPath = serie.imgPath,
                 GenderId = serie.Gender != null ? serie.Gender.Id : 0,
                 GenderName = serie.Gender != null ? serie.Gender.Name : null,
@@ -132,6 +138,7 @@ namespace ITLATV_.Core.Application.Services
                 Id = serie.Id,
                 Name = serie.Name,
                 ImgPath = serie.imgPath,
+                Description = serie.Description,
                 GenderId = serie.Gender != null ? serie.Gender.Id : 0,
                 GenderName = serie.Gender != null ? serie.Gender.Name : null,
                 ProducerName = serie.Producer.Name,
@@ -156,6 +163,7 @@ namespace ITLATV_.Core.Application.Services
                 Id = serie.Id,
                 Name = serie.Name,
                 ImgPath = serie.imgPath,
+                Description = serie.Description,
                 GenderId = serie.Gender != null ? serie.Gender.Id : 0,
                 GenderName = serie.Gender != null ? serie.Gender.Name : null,
                 ProducerName = serie.Producer.Name,

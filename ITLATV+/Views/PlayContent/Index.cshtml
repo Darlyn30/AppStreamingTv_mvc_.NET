@@ -14,25 +14,39 @@
                 <div class="card-body p-4">
                     <!-- Video -->
                     <div class="embed-responsive embed-responsive-16by9 rounded shadow-sm overflow-hidden">
-                        <video id="videoPlayer" class="w-100 rounded" controls autoplay>
-                            <source src="@Model.LinkVideo" type="video/mp4">
-                            
-                        </video>
+                        @{
+                            //this function replace link watch for embed
+                            //watch can't be reproduce by Iframe
+                            string ConvertToEmbedUrl(string urlVideo)
+                            {
+                                if (string.IsNullOrEmpty(urlVideo))
+                                {
+                                    return string.Empty;
+                                }
+
+                                
+                                return urlVideo.Replace("watch?v=", "embed/");
+                            }
+                        }
+                        <iframe id="videoPlayer" class="w-100 rounded"
+                                @{
+                                    Console.WriteLine(ConvertToEmbedUrl(Model.LinkVideo));
+                                }
+                                src="@ConvertToEmbedUrl(Model.LinkVideo)"
+                                frameborder="0" allowfullscreen
+                                style="height: 400px;">
+                        </iframe>
                     </div>
 
-                    <!-- Información -->
+                    <!-- Informationn -->
                     <div class="mt-4 text-center">
                         <h2 class="fw-bold">@Model.Name</h2>
-                        <p class="text-muted">@Model.Description</p>
-                        @{
-                            //Console.WriteLine(Model.ProducerId);
-                            
-                        }
-                        <p><strong>Producer:</strong> @Model.ProducerId</p>
-                        <p><strong>Genre:</strong> @Model.GenderId</p>
+                        <p><strong>Description:</strong> @Model.Description</p>
+                        <p><strong>Producer:</strong>@Model.ProducerName</p>
+                        <p><strong>Genre:</strong> @Model.GenderName</p>
                     </div>
 
-                    <!-- Botón de regreso -->
+                    <!-- Back button -->
                     <div class="text-center mt-4">
                         <a asp-controller="Home" asp-action="Index" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm">
                             ⬅ Back to Series

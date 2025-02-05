@@ -121,9 +121,18 @@
                                 <div class="d-flex justify-content-between align-items-center mb-3" style="margin-left:20px;">
                                     <a asp-controller="PlayContent" asp-action="Index" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary fw-bold">Play</a>
                                 </div>
+                                <div class="btn-group">
+                                    <a asp-controller="Serie" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning fw-bold">Edit</a>
+                                    <a asp-controller="Serie" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger fw-bold">Delete</a>
+                                </div>
                             </div>
                         </div>
                     }
+                    <div class="text-center">
+                        <a asp-controller="Serie" asp-action="Create" id="btnAdd" class="btn btn-primary btn-lg shadow-lg rounded-pill px-4 py-2">
+                            <i class="fas fa-plus-circle"></i> Add new Serie
+                        </a>
+                    </div>
                 }
             </div>
         </div>
