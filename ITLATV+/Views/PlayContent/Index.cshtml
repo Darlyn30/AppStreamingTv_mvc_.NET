@@ -1,0 +1,59 @@
+@using ITLATV_.Core.Application.ViewModels.Series;
+@using ITLATV_.Core.Application.ViewModels.Genders;
+@using ITLATV_.Core.Application.ViewModels.Producers;
+@model SerieViewModel
+@{
+    ViewData["Title"] = "Play Content";
+}
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+                    <!-- Video -->
+                    <div class="embed-responsive embed-responsive-16by9 rounded shadow-sm overflow-hidden">
+                        @{
+                            //this function replace link watch for embed
+                            //watch can't be reproduce by Iframe
+                            string ConvertToEmbedUrl(string urlVideo)
+                            {
+                                if (string.IsNullOrEmpty(urlVideo))
+                                {
+                                    return string.Empty;
+                                }
+
+                                
+                                return urlVideo.Replace("watch?v=", "embed/");
+                            }
+                        }
+                        <iframe id="videoPlayer" class="w-100 rounded"
+                                @{
+                                    Console.WriteLine(ConvertToEmbedUrl(Model.LinkVideo));
+                                }
+                                src="@ConvertToEmbedUrl(Model.LinkVideo)"
+                                frameborder="0" allowfullscreen
+                                style="height: 400px;">
+                        </iframe>
+                    </div>
+
+                    <!-- Informationn -->
+                    <div class="mt-4 text-center">
+                        <h2 class="fw-bold">@Model.Name</h2>
+                        <p><strong>Description:</strong> @Model.Description</p>
+                        <p><strong>Producer:</strong>@Model.ProducerName</p>
+                        <p><strong>Genre:</strong> @Model.GenderName</p>
+                    </div>
+
+                    <!-- Back button -->
+                    <div class="text-center mt-4">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm">
+                            ⬅ Back to Series
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
